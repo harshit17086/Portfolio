@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 
 import { workExperience } from "@/data";
@@ -12,9 +12,10 @@ const Experience = () => {
         <span className="text-purple">Professional Experience</span>
       </h2>
       <p className="text-center text-slate-400 max-w-2xl mx-auto mb-12 text-lg">
-        Proven track record delivering scalable, high-impact solutions for startups and established companies.
+        Proven track record delivering scalable, high-impact solutions for
+        startups and established companies.
       </p>
-  <div className="w-full flex flex-col gap-10 mt-8 px-4 md:px-12 lg:px-32">
+      <div className="w-full flex flex-col gap-10 mt-8 px-4 md:px-12 lg:px-32">
         {workExperience.map((card) => (
           <Button
             key={card.id}
@@ -22,7 +23,8 @@ const Experience = () => {
             borderRadius="1.75rem"
             style={{
               background: "rgb(4,7,29)",
-              backgroundColor: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+              backgroundColor:
+                "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
               borderRadius: `calc(1.75rem* 0.96)`,
             }}
             className="flex-1 text-white border-white/10 mt-0 bg-gradient-to-br from-[#23263a] to-[#181c2b] shadow-lg"
@@ -31,6 +33,8 @@ const Experience = () => {
               <Image
                 src={card.thumbnail}
                 alt={card.title}
+                width={128}
+                height={128}
                 className="lg:w-32 md:w-20 w-16 rounded-xl shadow-md"
               />
               <div className="lg:ms-5">

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
@@ -6,7 +6,6 @@ import { IoCopyOutline } from "react-icons/io5";
 import Lottie from "react-lottie";
 
 import { cn } from "@/lib/utils";
-
 
 import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
@@ -28,8 +27,8 @@ export const BentoGrid = ({
         className
       )}
       style={{
-        position: 'relative',
-        zIndex: 2
+        position: "relative",
+        zIndex: 2,
       }}
     >
       {/* Animated gradient overlay for glassmorphism */}
@@ -88,8 +87,8 @@ export const BentoGridItem = ({
         className
       )}
       style={{
-        boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.18)',
-        border: '1.5px solid rgba(255,255,255,0.10)',
+        boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.18)",
+        border: "1.5px solid rgba(255,255,255,0.10)",
       }}
     >
       {/* add img divs */}
@@ -99,19 +98,23 @@ export const BentoGridItem = ({
             <Image
               src={img}
               alt={img}
+              width={500}
+              height={300}
               className={cn(imgClassName, "object-cover object-center ")}
             />
           )}
         </div>
         <div
-          className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"
-            } `}
+          className={`absolute right-0 -bottom-5 ${
+            id === 5 && "w-full opacity-80"
+          } `}
         >
           {spareImg && (
             <Image
               src={spareImg}
               alt={spareImg}
-              //   width={220}
+              width={220}
+              height={220}
               className="object-cover object-center w-full h-full"
             />
           )}
@@ -138,7 +141,7 @@ export const BentoGridItem = ({
           <div
             className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
           >
-          {title}
+            {title}
           </div>
 
           {/* for the github 3d globe */}
@@ -181,8 +184,9 @@ export const BentoGridItem = ({
               {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
               {/* add handleCopy() for the copy the text */}
               <div
-                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
-                  }`}
+                className={`absolute -bottom-5 right-0 ${
+                  copied ? "block" : "block"
+                }`}
               >
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
                 <Lottie options={defaultOptions} height={200} width={400} />
