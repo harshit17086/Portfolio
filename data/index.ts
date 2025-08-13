@@ -234,7 +234,7 @@ export const socialMedia = [
   {
     id: 1,
     img: "/github1.jpg",
-    link: "https://github.com/Khan-armaan"
+    link: "https://github.com/harshit17086"
   },
   {
     id: 2,
@@ -244,6 +244,6 @@ export const socialMedia = [
   {
     id: 3,
     img: "/link.svg",
-    link: "https://www.linkedin.com/in/armaan-khan1/"
+    link: "https://www.linkedin.com/in/harshit-joshi-a97377259"
   },
 ];
