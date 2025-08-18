@@ -32,7 +32,7 @@ const Hero = () => {
           <p className="text-center md:tracking-wider mb-6 text-base md:text-lg lg:text-2xl text-slate-300 max-w-2xl">
             Hi, I&apos;m <span className="text-purple font-bold">Harshit Joshi</span> — a Software Developer specializing in full-stack, cloud-native, and high-performance web solutions.
           </p>
-          <a href="https://drive.google.com/file/d/1oRW_L30B5QkYfm3sczyzrQNtxY5AlqGC/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <a href="https://drive.google.com/file/d/1IsQXdGT4V22oTD8TL0zOtS3aJ5GRcY5Q/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
             <MagicButton
               title="Download CV"
               icon={<FaLocationArrow />}

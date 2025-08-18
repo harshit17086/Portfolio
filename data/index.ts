@@ -85,7 +85,7 @@ export const projects = [
 
     img: "/pos.png",
    iconLists: ["/re.svg", "/ts.svg","/docker.svg","/postgresql.svg", "/linux.svg", "/node.svg"],
-    link: "https://pos.mybyte.store/",
+    link: "https://pos.kaitorimybyte.com/",
   },
   {
     id: 3,
