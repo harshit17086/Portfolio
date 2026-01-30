@@ -5,7 +5,7 @@ import Error from "next/error";
 import { useEffect } from "react";
 
 export default function GlobalError({ error }) {
-  useEffect(() => {
+  useEffect(() => vvefv
     Sentry.captureException(error);
   }, [error]);
 
